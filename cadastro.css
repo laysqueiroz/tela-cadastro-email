@@ -1,0 +1,113 @@
+:root {
+    --linear-gradient: linear-gradient(120deg, #CE9797, #F8F2E8);
+    --button-linear: linear-gradient(120deg, #CE9797, #F8F2E8, #CE9797);
+    --white: #ffffff;
+    --black: #2d2d2d;
+    --gray: #acacac;
+    --light-gray: #cccccc;
+    --petite-orchid: #CE9797;
+  } 
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  .register {
+    height: 100vh;
+    background: var(--linear-gradient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    height: 565px;
+    width: 1000px;
+    background-image: url(https://i.ibb.co/P9Rfr69/Design-sem-nome.png);
+    box-sizing: border-box;
+    border-radius: 2px;
+    display: grid;
+    grid-template-columns: 548px 400px;
+    grid-template-rows: 170px 260px 70px;
+  }
+  
+  .title {
+    color: var(--petite-orchid);
+    font-size: 50px;
+    margin-left: 80px;
+    padding-top: 65px;
+    letter-spacing: .5rem;
+  }
+  
+  .pos-title {
+    width: 300px;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  span {
+    color: var(--black);
+    font-size: 60px;
+  }
+  
+  #img-model {  
+    height: 113%;
+    width: 113%;
+    grid-column: 2;
+    grid-row: 1/4;
+    border-radius: 2px;
+  }
+  
+  .description {
+    margin-left: 84px;
+    margin-top: 62px;
+    font-size: 22px;
+    color: var(--petite-orchid);
+    font-weight: bold;
+    padding-top: 58px;
+  }
+  
+  .pos-description {
+    width: 400px;
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  .input {
+    margin-left: 82px;
+    height: 48px;
+    width: 60%;
+    box-sizing: border-box;
+    padding-left: 25px;
+    border-radius: 40px;
+    border: 1px solid var(--light-gray);
+    outline: none;
+    font-size: 14px;
+  }
+  
+  ::placeholder {
+    color: var(--gray);
+  }
+  
+  .submit {
+    height: 48px;
+    position: absolute;
+    margin: 0px -80px;
+    border-radius: 40px;
+    border: unset;
+    background: var(--button-linear);
+    background-size: 200%;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+  }
+  
+  .submit:hover {
+    background-position: right;
+  }
+  
+  #img-arrow {
+    margin-right: 28px;
+    margin-left: 28px;
+  }
